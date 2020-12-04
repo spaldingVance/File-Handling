@@ -31,15 +31,12 @@ public class FileHandler {
 		}
 
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+			
 			String fileContents = reader.readLine();
-			
-			
 			System.out.println(fileContents);
 			reader.close();
 
 		}
-		
-		
 
 	}
 
